@@ -1,0 +1,569 @@
+{
+  "name": "latihan",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "latihan-mgmt",
+        "bridge": "br-62ae57b1a84a",
+        "ipv4-subnet": "10.10.10.0/24",
+        "ipv4-gw": "10.10.10.1",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBjtxS2XEPr7LQbwWWz3XBkldPWvR4+UQMBZM1Xe/2Zk"],
+  "nodes": {
+    "pc1": {
+      "index": "0",
+      "shortname": "pc1",
+      "longname": "clab-latihan-pc1",
+      "fqdn": "pc1.latihan.io",
+      "group": "",
+      "labdir": "/root/jarkom_lanjut/pert4/latihan/clab-latihan/pc1",
+      "kind": "linux",
+      "image": "alpine",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "10.10.10.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-62ae57b1a84a",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/root/jarkom_lanjut/pert4/latihan/clab-latihan/pc1",
+        "clab-node-longname": "clab-latihan-pc1",
+        "clab-node-name": "pc1",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/root/jarkom_lanjut/pert4/latihan/latihan.yml",
+        "containerlab": "latihan"
+      },
+      "port-bindings": [
+      ]
+    },
+    "pc2": {
+      "index": "1",
+      "shortname": "pc2",
+      "longname": "clab-latihan-pc2",
+      "fqdn": "pc2.latihan.io",
+      "group": "",
+      "labdir": "/root/jarkom_lanjut/pert4/latihan/clab-latihan/pc2",
+      "kind": "linux",
+      "image": "alpine",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "10.10.10.8",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-62ae57b1a84a",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/root/jarkom_lanjut/pert4/latihan/clab-latihan/pc2",
+        "clab-node-longname": "clab-latihan-pc2",
+        "clab-node-name": "pc2",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/root/jarkom_lanjut/pert4/latihan/latihan.yml",
+        "containerlab": "latihan"
+      },
+      "port-bindings": [
+      ]
+    },
+    "pc3": {
+      "index": "2",
+      "shortname": "pc3",
+      "longname": "clab-latihan-pc3",
+      "fqdn": "pc3.latihan.io",
+      "group": "",
+      "labdir": "/root/jarkom_lanjut/pert4/latihan/clab-latihan/pc3",
+      "kind": "linux",
+      "image": "alpine",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "10.10.10.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-62ae57b1a84a",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/root/jarkom_lanjut/pert4/latihan/clab-latihan/pc3",
+        "clab-node-longname": "clab-latihan-pc3",
+        "clab-node-name": "pc3",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/root/jarkom_lanjut/pert4/latihan/latihan.yml",
+        "containerlab": "latihan"
+      },
+      "port-bindings": [
+      ]
+    },
+    "pc4": {
+      "index": "3",
+      "shortname": "pc4",
+      "longname": "clab-latihan-pc4",
+      "fqdn": "pc4.latihan.io",
+      "group": "",
+      "labdir": "/root/jarkom_lanjut/pert4/latihan/clab-latihan/pc4",
+      "kind": "linux",
+      "image": "alpine",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "10.10.10.11",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-62ae57b1a84a",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/root/jarkom_lanjut/pert4/latihan/clab-latihan/pc4",
+        "clab-node-longname": "clab-latihan-pc4",
+        "clab-node-name": "pc4",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/root/jarkom_lanjut/pert4/latihan/latihan.yml",
+        "containerlab": "latihan"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r1": {
+      "index": "4",
+      "shortname": "r1",
+      "longname": "clab-latihan-r1",
+      "fqdn": "r1.latihan.io",
+      "group": "",
+      "labdir": "/root/jarkom_lanjut/pert4/latihan/clab-latihan/r1",
+      "kind": "linux",
+      "image": "frrouting/frr",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "10.10.10.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-62ae57b1a84a",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/root/jarkom_lanjut/pert4/latihan/clab-latihan/r1",
+        "clab-node-longname": "clab-latihan-r1",
+        "clab-node-name": "r1",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/root/jarkom_lanjut/pert4/latihan/latihan.yml",
+        "containerlab": "latihan"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r2": {
+      "index": "5",
+      "shortname": "r2",
+      "longname": "clab-latihan-r2",
+      "fqdn": "r2.latihan.io",
+      "group": "",
+      "labdir": "/root/jarkom_lanjut/pert4/latihan/clab-latihan/r2",
+      "kind": "linux",
+      "image": "frrouting/frr",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "10.10.10.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-62ae57b1a84a",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/root/jarkom_lanjut/pert4/latihan/clab-latihan/r2",
+        "clab-node-longname": "clab-latihan-r2",
+        "clab-node-name": "r2",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/root/jarkom_lanjut/pert4/latihan/latihan.yml",
+        "containerlab": "latihan"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r3": {
+      "index": "6",
+      "shortname": "r3",
+      "longname": "clab-latihan-r3",
+      "fqdn": "r3.latihan.io",
+      "group": "",
+      "labdir": "/root/jarkom_lanjut/pert4/latihan/clab-latihan/r3",
+      "kind": "linux",
+      "image": "frrouting/frr",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "10.10.10.6",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-62ae57b1a84a",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/root/jarkom_lanjut/pert4/latihan/clab-latihan/r3",
+        "clab-node-longname": "clab-latihan-r3",
+        "clab-node-name": "r3",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/root/jarkom_lanjut/pert4/latihan/latihan.yml",
+        "containerlab": "latihan"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r4": {
+      "index": "7",
+      "shortname": "r4",
+      "longname": "clab-latihan-r4",
+      "fqdn": "r4.latihan.io",
+      "group": "",
+      "labdir": "/root/jarkom_lanjut/pert4/latihan/clab-latihan/r4",
+      "kind": "linux",
+      "image": "frrouting/frr",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "10.10.10.7",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-62ae57b1a84a",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/root/jarkom_lanjut/pert4/latihan/clab-latihan/r4",
+        "clab-node-longname": "clab-latihan-r4",
+        "clab-node-name": "r4",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/root/jarkom_lanjut/pert4/latihan/latihan.yml",
+        "containerlab": "latihan"
+      },
+      "port-bindings": [
+      ]
+    },
+    "s1": {
+      "index": "8",
+      "shortname": "s1",
+      "longname": "clab-latihan-s1",
+      "fqdn": "s1.latihan.io",
+      "group": "",
+      "labdir": "/root/jarkom_lanjut/pert4/latihan/clab-latihan/s1",
+      "kind": "linux",
+      "image": "alpine",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "10.10.10.12",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-62ae57b1a84a",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/root/jarkom_lanjut/pert4/latihan/clab-latihan/s1",
+        "clab-node-longname": "clab-latihan-s1",
+        "clab-node-name": "s1",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/root/jarkom_lanjut/pert4/latihan/latihan.yml",
+        "containerlab": "latihan"
+      },
+      "port-bindings": [
+      ]
+    },
+    "s2": {
+      "index": "9",
+      "shortname": "s2",
+      "longname": "clab-latihan-s2",
+      "fqdn": "s2.latihan.io",
+      "group": "",
+      "labdir": "/root/jarkom_lanjut/pert4/latihan/clab-latihan/s2",
+      "kind": "linux",
+      "image": "alpine",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "10.10.10.13",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-62ae57b1a84a",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/root/jarkom_lanjut/pert4/latihan/clab-latihan/s2",
+        "clab-node-longname": "clab-latihan-s2",
+        "clab-node-name": "s2",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/root/jarkom_lanjut/pert4/latihan/latihan.yml",
+        "containerlab": "latihan"
+      },
+      "port-bindings": [
+      ]
+    },
+    "s3": {
+      "index": "10",
+      "shortname": "s3",
+      "longname": "clab-latihan-s3",
+      "fqdn": "s3.latihan.io",
+      "group": "",
+      "labdir": "/root/jarkom_lanjut/pert4/latihan/clab-latihan/s3",
+      "kind": "linux",
+      "image": "alpine",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "10.10.10.10",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-62ae57b1a84a",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/root/jarkom_lanjut/pert4/latihan/clab-latihan/s3",
+        "clab-node-longname": "clab-latihan-s3",
+        "clab-node-name": "s3",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/root/jarkom_lanjut/pert4/latihan/latihan.yml",
+        "containerlab": "latihan"
+      },
+      "port-bindings": [
+      ]
+    },
+    "s4": {
+      "index": "11",
+      "shortname": "s4",
+      "longname": "clab-latihan-s4",
+      "fqdn": "s4.latihan.io",
+      "group": "",
+      "labdir": "/root/jarkom_lanjut/pert4/latihan/clab-latihan/s4",
+      "kind": "linux",
+      "image": "alpine",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "10.10.10.9",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-62ae57b1a84a",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/root/jarkom_lanjut/pert4/latihan/clab-latihan/s4",
+        "clab-node-longname": "clab-latihan-s4",
+        "clab-node-name": "s4",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/root/jarkom_lanjut/pert4/latihan/latihan.yml",
+        "containerlab": "latihan"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "r1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:c9:69:28",
+          "peer": "z"
+        },
+        "z": {
+          "node": "s1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:1c:bf:61",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "s1",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:c7:ec:8d",
+          "peer": "z"
+        },
+        "z": {
+          "node": "pc1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:97:4c:49",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:19:f5:0d",
+          "peer": "z"
+        },
+        "z": {
+          "node": "s2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:d9:44:46",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "s2",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:7a:10:1d",
+          "peer": "z"
+        },
+        "z": {
+          "node": "pc2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:54:c9:db",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r3",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:b1:8d:b6",
+          "peer": "z"
+        },
+        "z": {
+          "node": "s3",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:95:21:08",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "s3",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:19:97:bc",
+          "peer": "z"
+        },
+        "z": {
+          "node": "pc3",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:a7:e9:d9",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r4",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:ee:f4:05",
+          "peer": "z"
+        },
+        "z": {
+          "node": "s4",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:5f:98:32",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "s4",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:e5:23:67",
+          "peer": "z"
+        },
+        "z": {
+          "node": "pc4",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:d3:c0:ad",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r1",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:42:75:53",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r2",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:22:f2:55",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r2",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:6b:f9:14",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r3",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:bf:25:d4",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r3",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:a2:76:98",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r4",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:a2:3b:82",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}

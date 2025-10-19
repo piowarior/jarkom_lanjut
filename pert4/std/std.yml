@@ -1,0 +1,14 @@
+name: lab-basic
+
+topology:
+  nodes:
+    R1:
+      kind: linux
+      image: frrouting/frr
+
+    R2:
+      kind: linux
+      image: frrouting/frr
+
+  links:
+   - endpoints: ["R1:eth1", "R2:eth2"]

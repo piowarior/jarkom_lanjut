@@ -1,0 +1,101 @@
+{
+  "name": "lab-basic",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-8c7cc4dabba3",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBjtxS2XEPr7LQbwWWz3XBkldPWvR4+UQMBZM1Xe/2Zk"],
+  "nodes": {
+    "R1": {
+      "index": "0",
+      "shortname": "R1",
+      "longname": "clab-lab-basic-R1",
+      "fqdn": "R1.lab-basic.io",
+      "group": "",
+      "labdir": "/root/jarkom_lanjut/pert4/std/clab-lab-basic/R1",
+      "kind": "linux",
+      "image": "frrouting/frr",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-8c7cc4dabba3",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/root/jarkom_lanjut/pert4/std/clab-lab-basic/R1",
+        "clab-node-longname": "clab-lab-basic-R1",
+        "clab-node-name": "R1",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/root/jarkom_lanjut/pert4/std/std.yml",
+        "containerlab": "lab-basic"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R2": {
+      "index": "1",
+      "shortname": "R2",
+      "longname": "clab-lab-basic-R2",
+      "fqdn": "R2.lab-basic.io",
+      "group": "",
+      "labdir": "/root/jarkom_lanjut/pert4/std/clab-lab-basic/R2",
+      "kind": "linux",
+      "image": "frrouting/frr",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-8c7cc4dabba3",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/root/jarkom_lanjut/pert4/std/clab-lab-basic/R2",
+        "clab-node-longname": "clab-lab-basic-R2",
+        "clab-node-name": "R2",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/root/jarkom_lanjut/pert4/std/std.yml",
+        "containerlab": "lab-basic"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "R1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:9d:b0:4e",
+          "peer": "z"
+        },
+        "z": {
+          "node": "R2",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:41:c5:e7",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}
